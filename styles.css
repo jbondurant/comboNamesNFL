@@ -1,0 +1,45 @@
+.wrapper {
+  overflow: auto;
+  height: 100px;
+  width: 200px;
+}
+
+table {
+  position: relative;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+table th,
+table td {
+  width: 50px;
+  padding: 5px;
+  background-color: white;
+}
+
+table tbody {
+  height: 90px;
+}
+
+table th {
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+table th:nth-child(1) {
+  left: 0;
+  z-index: 3;
+}
+
+table td {
+  text-align: center;
+  white-space: pre;
+}
+
+table tbody tr td:nth-child(1) {
+  position: sticky;
+  left: 0;
+  z-index: 1;
+}
